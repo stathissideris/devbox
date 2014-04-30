@@ -18,6 +18,7 @@ package { 'emacs24-el' : ensure => present }
 
 package { 'imagemagick' : ensure => present }
 
+package { 'phantomjs' : ensure => present }
 
 class leiningen {
   package { 'openjdk-7-jdk' : ensure => present }
