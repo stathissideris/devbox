@@ -6,6 +6,11 @@
 2. `git submodule update`
 3. `vagrant up`
 
+## Make shared drives work on Windows
+
+1. Install [Oracle VM VirtualBox Extension Pack](http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html?ssSourceSiteId=otnjp) in the host
+2. In the guest do: `sudo ln -s /opt/VBoxGuestAdditions-4.3.10/lib/VBoxGuestAdditions /usr/lib/VBoxGuestAdditions`
+
 ## Putty SSH from Windows host
 
 1. convert the `%HOMEPATH%\.vagrant.d\insecure_private_key` to .ppk using PuTTYGen
