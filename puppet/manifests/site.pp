@@ -17,7 +17,9 @@ package { 'emacs24-el' : ensure => present }
 
 package { 'imagemagick' : ensure => present }
 
-package { 'phantomjs' : ensure => present }
+package { 'postgresql-9.3' : ensure => present }
+
+#package { 'phantomjs' : ensure => present }
 
 include leiningen
 include opam
