@@ -17,12 +17,13 @@ package { 'emacs24-el' : ensure => present }
 
 package { 'imagemagick' : ensure => present }
 
-package { 'postgresql-9.3' : ensure => present }
-
 #package { 'phantomjs' : ensure => present }
 
 include leiningen
-include opam
+#include opam
 include wemux
-include latex
+#include latex
 include user
+
+include bsq-postgresql
+
