@@ -25,3 +25,4 @@ include leiningen
 include opam
 include wemux
 include latex
+include user
