@@ -2,7 +2,8 @@ class user {
   user { "sideris":
     ensure => present,
     home   => "/home/sideris",
-    password => "",
+    # mkpasswd -m sha-512 -s
+    password => '$6$qo.P3EcJXCPw$oqDDqRtSBH47aPqXWbGfbPzRMYT5Ek7hqILIcwSr6baYqp9DqtyraI5vw6uftWaYO1pEZeGfJhOTNsBMWKjdd/',
     groups => ['users'],
     shell  => '/bin/bash',
     managehome => true,
@@ -34,4 +35,3 @@ class user {
     creates => '/home/sideris/.emacs.d',
   }
 }
-
